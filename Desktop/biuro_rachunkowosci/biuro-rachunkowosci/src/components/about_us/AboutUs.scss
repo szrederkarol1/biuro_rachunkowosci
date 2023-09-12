@@ -1,0 +1,70 @@
+.section-aboutUs {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .aboutUs-content {
+    width: 66.8vw;
+    .company-description {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      .company-description-title {
+        color: #212121;
+        font-size: 5vh;
+        font-family: "Montserrat", sans-serif;
+      }
+      .company-description-paragraphs {
+        width: 44vw;
+        color: #212121bf;
+        font-family: "Roboto Slab", serif;
+        font-size: 1.85vh;
+        height: 53vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .description {
+          text-align: justify;
+          line-height: 3.7vh;
+        }
+      }
+      .company-signature {
+        text-align: end;
+        line-height: 4vh;
+      }
+      .next {
+        margin-top: 15px;
+      }
+    }
+    .gallery {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin: 37px;
+      .image {
+        width: 25.62vw;
+        height: 45vh;
+        margin: 13px;
+      }
+      .image-first {
+        background: url("../../assets/gallery_image.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      .image-secondary {
+        background: url("../../assets/gallery_image_secondary.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      .image-thirth {
+        background: url("../../assets/gallery_image_thirth.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+    }
+  }
+}
