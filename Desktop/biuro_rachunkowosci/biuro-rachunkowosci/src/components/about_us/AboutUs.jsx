@@ -39,7 +39,39 @@ const AboutUs = () => {
             <div className="image image-secondary"></div>
             <div className="image image-thirth"></div>
           </div>
-          <div></div>
+          <div className="ornament"></div>
+        </div>
+      </section>
+      <header>
+        <h1>Usługi Księgowe KMS</h1>
+        <p>
+          Z nami Twoje finanse będą bezpieczne i opłacalne. Skorzystaj z naszych
+          usług księgowych już dziś!
+        </p>
+      </header>
+
+      <section class="services">
+        <div class="service">
+          <h2>Księgowość Dla Firm</h2>
+          <ul>
+            <li>Prowadzenie księgowości finansowej</li>
+            <li>Rozliczenia podatkowe</li>
+            <li>Doradztwo podatkowe</li>
+            <li>Rozliczenia kadrowe i płace</li>
+            <li>Audyt finansowy</li>
+            <li>Planowanie finansowe</li>
+          </ul>
+        </div>
+        <div class="service">
+          <h2>Księgowość Dla Osób Prywatnych</h2>
+          <ul>
+            <li>Rozliczenia podatkowe osób prywatnych</li>
+            <li>Doradztwo podatkowe dla osób prywatnych</li>
+            <li>Planowanie emerytalne</li>
+            <li>Zarządzanie finansami osobistymi</li>
+            <li>Dziedziczenie i planowanie przekazu</li>
+            <li>Konsultacje podatkowe dla osób prywatnych</li>
+          </ul>
         </div>
       </section>
     </>
