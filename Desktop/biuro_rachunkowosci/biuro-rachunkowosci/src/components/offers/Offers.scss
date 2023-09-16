@@ -30,7 +30,7 @@
   padding: 50px;
   background-color: #f5f5f5;
   position: relative;
-    &::after {
+  &::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -47,6 +47,15 @@
     border-radius: 15px;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
     text-align: center;
+    .btn-offer {
+      background-color: #6666669f;
+      border-radius: 200px;
+      padding: 2vh;
+      color: #fff;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+    }
   }
   .destiny {
     font-size: 36px;

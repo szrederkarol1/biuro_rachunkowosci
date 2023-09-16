@@ -28,6 +28,7 @@ const Offers = () => {
             <li className="list-item">Doradztwo podatkowe</li>
             <li className="list-item">Analizy i raporty</li>
           </ul>
+          <button className="btn-offer">Zapytaj o ofertę</button>
         </div>
         <div className="service">
           <h2 className="destiny">Księgowość Dla Osób Prywatnych</h2>
@@ -37,6 +38,7 @@ const Offers = () => {
             <li className="list-item">Rozliczenia podatkowe</li>
             <li className="list-item">Zarządzanie finansami osobistymi</li>
           </ul>
+          <button className="btn-offer">Zapytaj o ofertę</button>
         </div>
       </section>
     </>
