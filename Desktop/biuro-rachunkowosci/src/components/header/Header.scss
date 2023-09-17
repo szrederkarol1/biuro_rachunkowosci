@@ -1,0 +1,62 @@
+.header {
+  height: 36vh;
+  .top-header {
+    color: #fff;
+    height: 78%;
+    background: url("../../assets/header_background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 1.5s ease-in-out forwards;
+    opacity: 0;
+    @keyframes fadeIn {
+      from {
+        opacity: 0; 
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    &::before {
+      background: rgba(0, 0, 0, 0.4);
+      content: "";
+      height: 44%;
+      position: absolute;
+      width: 100%;
+      z-index: 1;
+    }
+    .title-header {
+      font-size: 6.4vh;
+      z-index: 999;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+    }
+    .paragraph-header {
+      font-size: 1.8vh;
+      z-index: 999;
+      font-family: "Roboto Slab", serif;
+    }
+  }
+  .bottom-header {
+    height: 22%;
+    color: #fff;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    animation: fadeIn 1.5s ease-in-out forwards;
+    opacity: 0;
+    position: sticky;
+    top: 0;
+    .brand {
+      margin-left: 5%;
+      cursor: pointer;
+      font-size: 3.6vh;
+      z-index: 999;
+      font-family: "Montserrat", sans-serif;
+    }
+  }
+}
