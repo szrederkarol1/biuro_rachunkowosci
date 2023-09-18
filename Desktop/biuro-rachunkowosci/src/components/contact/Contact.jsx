@@ -23,7 +23,7 @@ const Contact = () => {
           <div className="contact-details">
             <h2>Skontaktuj się z nami</h2>
             <div className="details">
-              <div className="adress">
+              <div className="adress"><div></div>
                 <h6>Adres</h6>
                 <p>84-215 Gowino ul. Cicha 13/1</p>
               </div>
