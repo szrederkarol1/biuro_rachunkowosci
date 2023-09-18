@@ -7,7 +7,7 @@ const Contact = () => {
         <div className="contact-container">
           <div className="form">
             <div className="email-container">
-              <label htmlFor="email" alt="Twój adres e-mail" for="email">
+              <label htmlFor="email" alt="Twój adres e-mail">
                 Twój Adres e-mail
               </label>
               <input
@@ -19,7 +19,7 @@ const Contact = () => {
               ></input>
             </div>
             <div className="message-container">
-              <label htmlFor="message" alt="Wiadomość" for="message">
+              <label htmlFor="message" alt="Wiadomość">
                 Wiadomość
               </label>
               <textarea id="message" name="message"></textarea>

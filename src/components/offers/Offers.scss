@@ -30,6 +30,9 @@
   padding: 50px;
   background-color: transparent;
   position: relative;
+  @media(max-width: 768px) {
+    display: block;
+  }
   &::after {
     content: "";
     position: absolute;
