@@ -1,6 +1,6 @@
 .header {
   height: 36vh;
-  width: 100vw;
+  width: 100%;
   @media (max-width: 767px) {
     height: 60vh;
   }
@@ -17,9 +17,7 @@
     justify-content: center;
     animation: fadeIn 1.5s ease-in-out forwards;
     opacity: 0;
-    @media (max-width: 767px) {
-      background-size: auto;
-    }
+    text-align: center;
     @keyframes fadeIn {
       from {
         opacity: 0; 
@@ -36,19 +34,26 @@
       width: 100%;
       z-index: 1;
       @media (max-width: 767px) {
-        height: 73%;
+        height: 66%;
       }
     }
     .title-header {
-      font-size: 3.5vw;
+      font-size: 60px;
       z-index: 999;
       font-family: "Montserrat", sans-serif;
       font-weight: 600;
+      @media (max-width: 767px) {
+        font-size: 54px;
+        width: 400px;
+      }
     }
     .paragraph-header {
       font-size: 1.8vh;
       z-index: 999;
       font-family: "Roboto Slab", serif;
+      @media (max-width: 767px) {
+        font-size: 20px;
+       }
     }
   }
   .bottom-header {
