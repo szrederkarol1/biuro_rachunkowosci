@@ -1,7 +1,7 @@
 .contact-content {
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 100vw;
   height: 50vh;
   @media (max-width: 768px) {
     height: 100vh;
@@ -16,6 +16,7 @@
     margin: 0 -24px;
     @media (max-width: 768px) {
       display: block;
+      width: 100vw;
     }
     .form {
       display: flex;
@@ -27,7 +28,7 @@
       margin-top: 10px;
       @media (max-width: 768px) {
         display: block;
-        width: 100%;
+        width: 100vw;
         margin-bottom: 30px;
       }
     }
@@ -51,7 +52,7 @@
       margin-top: 10px;
       font-size: 17px;
       border-radius: 8px;
-      transition: border-color 0.3s ease, transform 0.3s ease;
+      transition: 0.3s ease, transform 0.3s ease;
     }
     #message {
       height: 18vh;
@@ -62,7 +63,7 @@
       color: rgba(33, 33, 33, 0.8);
       font-size: 16px;
       border-radius: 8px;
-      transition: border-color 0.3s ease, transform 0.3s ease;
+      transition: 0.3s ease, transform 0.3s ease;
       margin-top: 10px;
     }
 
@@ -123,8 +124,11 @@
       width: 50%;
       height: 33vh;
       padding: 0px 24px;
+      @media (max-width: 768px) {
+        width: 100%;
+      }
       h2 {
-        font-size: 45.7px;
+        font-size: 40.7px;
         font-family: "Montserrat", sans-serif;
         padding-inline-start: 42px;
         color: #212121;
@@ -152,16 +156,19 @@
         }
       }
       h6 {
-        font-size: 19.2px;
+        font-size: 15.2px;
         font-family: "Montserrat", sans-serif;
         font-weight: 600;
         letter-spacing: 1px;
-        line-height: 1.2;
         color: rgba(33, 33, 33, 0.75);
         margin-bottom: 5px;
+        @media (max-width: 768px) {
+          margin-top: 20px;
+          font-size: 25px;
+        }
       }
       p {
-        font-size: 17px;
+        font-size: 20px;
         font-family: "Roboto Slab", serif;
         color: rgba(33, 33, 33, 0.75);
       }
@@ -171,6 +178,9 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        .adress {
+          width: 100vw;
+        }
       }
     }
   }

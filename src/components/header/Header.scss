@@ -1,6 +1,28 @@
 .header {
   height: 36vh;
   width: 100%;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards;
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  &::before {
+    background: rgba(0, 0, 0, 0.4);
+    content: "";
+    height: 265.812px;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    @media (max-width: 767px) {
+      height: 542.391px;
+    }
+  }
+
   @media (max-width: 767px) {
     height: 60vh;
   }
@@ -15,33 +37,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    animation: fadeIn 1.5s ease-in-out forwards;
-    opacity: 0;
-    text-align: center;
-    @keyframes fadeIn {
-      from {
-        opacity: 0; 
-      }
-      to {
-        opacity: 1;
-      }
-    }
-    &::before {
-      background: rgba(0, 0, 0, 0.4);
-      content: "";
-      height: 44%;
-      position: absolute;
-      width: 100%;
-      z-index: 1;
-      @media (max-width: 767px) {
-        height: 66%;
-      }
-    }
     .title-header {
-      font-size: 60px;
-      z-index: 999;
+      font-size: 59px;
+      z-index: 2;
       font-family: "Montserrat", sans-serif;
       font-weight: 600;
+      text-align: center;
       @media (max-width: 767px) {
         font-size: 54px;
         width: 400px;
@@ -49,11 +50,11 @@
     }
     .paragraph-header {
       font-size: 1.8vh;
-      z-index: 999;
+      z-index: 2;
       font-family: "Roboto Slab", serif;
       @media (max-width: 767px) {
         font-size: 20px;
-       }
+      }
     }
   }
   .bottom-header {
@@ -62,13 +63,11 @@
     background-color: #000;
     display: flex;
     align-items: center;
-    animation: fadeIn 1.5s ease-in-out forwards;
-    opacity: 0;
     .brand {
       margin-left: 5%;
       cursor: pointer;
       font-size: 3.6vh;
-      z-index: 999;
+      z-index: 2;
       font-family: "Montserrat", sans-serif;
     }
   }

@@ -5,6 +5,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100vw;
+  height: auto;
   @media (max-width: 767px) {
     display: block;
   }
@@ -83,6 +85,7 @@
         @media (max-width: 767px) {
           width: 86vw;
           margin-left: 30px;
+          height: auto;
         }
         .description {
           text-align: justify;
@@ -113,11 +116,13 @@
         height: 45vh;
         filter: brightness(100%);
         &:hover {
-          transform: scale(1.1);
+          transform: scale(1.0);
           filter: brightness(110%);
         }
         @media (max-width: 767px) {
-          width: 65vw;
+          width: 100%;
+          height:500px;
+          margin: 13px;
         }
       }
       .image-first {
