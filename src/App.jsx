@@ -10,11 +10,11 @@ import "./components/about_us/AboutUs.scss";
 import "./components/contact/Contact.scss";
 import "./components/footer/Footer.scss";
 import "./height";
-import "./index.scss"
+import "./index.scss";
 
 const App = () => {
   return (
-    <div>
+    <div className="all-website">
       <Header />
       <AboutUs />
       <Offers />

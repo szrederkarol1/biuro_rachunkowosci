@@ -3,6 +3,7 @@
   width: 100%;
   opacity: 0;
   animation: fadeIn 1.5s ease-in-out forwards;
+
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -11,6 +12,7 @@
       opacity: 1;
     }
   }
+
   &::before {
     background: rgba(0, 0, 0, 0.4);
     content: "";
@@ -18,14 +20,8 @@
     position: absolute;
     width: 100%;
     z-index: 1;
-    @media (max-width: 767px) {
-      height: 542.391px;
-    }
   }
 
-  @media (max-width: 767px) {
-    height: 60vh;
-  }
   .top-header {
     color: #fff;
     height: 78%;
@@ -37,38 +33,151 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
+    text-align: center;
+
     .title-header {
-      font-size: 59px;
       z-index: 2;
       font-family: "Montserrat", sans-serif;
       font-weight: 600;
-      text-align: center;
-      @media (max-width: 767px) {
-        font-size: 54px;
-        width: 400px;
-      }
     }
+
     .paragraph-header {
       font-size: 1.8vh;
       z-index: 2;
       font-family: "Roboto Slab", serif;
-      @media (max-width: 767px) {
-        font-size: 20px;
-      }
     }
   }
+
   .bottom-header {
     height: 22%;
     color: #fff;
     background-color: #000;
     display: flex;
     align-items: center;
+
     .brand {
       margin-left: 5%;
       cursor: pointer;
       font-size: 3.6vh;
       z-index: 2;
       font-family: "Montserrat", sans-serif;
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+    height: 40vh;
+
+    .top-header {
+      align-items: flex-start;
+      .title-header {
+        font-size: 4.64vw;
+        position: absolute;
+      }
+
+      .paragraph-header {
+        font-size: 3vw;
+        bottom: 95px;
+        left: 40px;
+        position: absolute;
+      }
+    }
+    .bottom-header {
+      .brand {
+        font-size: 16px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 321px) and (max-width: 375px) {
+    height: 40vh;
+
+    .top-header {
+      align-items: flex-start;
+      .title-header {
+        font-size: 4.6vw;
+        position: absolute;
+        left: 1px;
+      }
+
+      .paragraph-header {
+        font-size: 2.5vw;
+        position: absolute;
+        bottom: 100px;
+        left: 17vw;
+      }
+    }
+    .bottom-header {
+      .brand {
+        font-size: 18px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 376px) and (max-width: 768px) {
+    height: 40vh;
+
+    .top-header {
+      align-items: flex-start;
+
+      .title-header {
+        font-size: 4.5vw;
+        position: absolute;
+      }
+
+      .paragraph-header {
+        font-size: 2vw;
+        bottom: 90px;
+        left: 17vw;
+        position: absolute;
+      }
+    }
+
+    .bottom-header {
+      .brand {
+        font-size: 20px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    height: 40vh;
+
+    .top-header {
+      .title-header {
+        font-size: 4.5vw;
+      }
+
+      .paragraph-header {
+        font-size: 2vw;
+      }
+    }
+
+    .bottom-header {
+      .brand {
+        margin-left: 0;
+        font-size: 24px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1025px) {
+    height: 40vh;
+
+    .top-header {
+      .title-header {
+        font-size: 3.5vw;
+      }
+
+      .paragraph-header {
+        font-size: 1.5vw;
+      }
+    }
+
+    .bottom-header {
+      .brand {
+        font-size: 28px;
+      }
     }
   }
 }
