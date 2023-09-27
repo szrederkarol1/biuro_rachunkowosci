@@ -9,7 +9,7 @@ const Footer = () => {
             <p> © All rights reserved</p>
             <p>Polityka Cookie</p>
           </div>
-        </div>
+        </div>z
       </section>
     </>
   );
