@@ -108,3 +108,9 @@
 .services:hover {
   background: linear-gradient(90deg, #555, #888, #555);
 }
+
+@media screen and (max-width: 320px) {
+  .services {
+    display: block;
+  }
+}
