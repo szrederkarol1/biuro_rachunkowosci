@@ -1,5 +1,5 @@
 .header {
-  height: 36vh;
+  height: 40vh;
   width: 100%;
   opacity: 0;
   animation: fadeIn 1.5s ease-in-out forwards;
@@ -16,168 +16,95 @@
   &::before {
     background: rgba(0, 0, 0, 0.4);
     content: "";
-    height: 265.812px;
+    height: 253.95px;
     position: absolute;
     width: 100%;
     z-index: 1;
   }
 
-  .top-header {
+  .top-header,
+  .bottom-header {
     color: #fff;
-    height: 78%;
-    background: url("../../assets/header_background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     display: flex;
-    flex-direction: column;
     align-items: center;
+  }
+
+  .top-header {
+    height: 78%;
+    background: url("../../assets/header_background.jpg") center/cover no-repeat;
+    flex-direction: column;
     justify-content: center;
-    position: relative;
-    text-align: center;
 
     .title-header {
-      z-index: 2;
       font-family: "Montserrat", sans-serif;
       font-weight: 600;
+      margin-bottom: 10px;
+      z-index: 2;
     }
 
     .paragraph-header {
-      font-size: 1.8vh;
-      z-index: 2;
       font-family: "Roboto Slab", serif;
+      z-index: 2;
     }
   }
 
   .bottom-header {
     height: 22%;
-    color: #fff;
     background-color: #000;
-    display: flex;
-    align-items: center;
 
     .brand {
       margin-left: 5%;
       cursor: pointer;
-      font-size: 3.6vh;
-      z-index: 2;
       font-family: "Montserrat", sans-serif;
     }
   }
 
-  @media screen and (max-width: 320px) {
-    height: 40vh;
-
-    .top-header {
-      align-items: flex-start;
-      .title-header {
-        font-size: 4.64vw;
-        position: absolute;
-      }
-
-      .paragraph-header {
-        font-size: 3vw;
-        bottom: 95px;
-        left: 40px;
-        position: absolute;
-      }
+  @media screen and (max-width: 320px),
+    (min-width: 321px) and (max-width: 375px) {
+    .top-header .title-header {
+      font-size: 6vw;
     }
-    .bottom-header {
-      .brand {
-        font-size: 16px;
-      }
+    .top-header .paragraph-header {
+      font-size: 3.5vw;
     }
-  }
-
-  @media screen and (min-width: 321px) and (max-width: 375px) {
-    height: 40vh;
-
-    .top-header {
-      align-items: flex-start;
-      .title-header {
-        font-size: 4.6vw;
-        position: absolute;
-        left: 1px;
-      }
-
-      .paragraph-header {
-        font-size: 2.5vw;
-        position: absolute;
-        bottom: 100px;
-        left: 17vw;
-      }
-    }
-    .bottom-header {
-      .brand {
-        font-size: 18px;
-      }
+    .bottom-header .brand {
+      font-size: 18px;
     }
   }
 
   @media screen and (min-width: 376px) and (max-width: 768px) {
-    height: 40vh;
-
-    .top-header {
-      align-items: flex-start;
-
-      .title-header {
-        font-size: 4.5vw;
-        position: absolute;
-      }
-
-      .paragraph-header {
-        font-size: 2vw;
-        bottom: 90px;
-        left: 17vw;
-        position: absolute;
-      }
+    .top-header .title-header {
+      font-size: 4.8vw;
     }
-
-    .bottom-header {
-      .brand {
-        font-size: 20px;
-      }
+    .top-header .paragraph-header {
+      font-size: 2.5vw;
+    }
+    .bottom-header .brand {
+      font-size: 20px;
     }
   }
 
   @media screen and (min-width: 769px) and (max-width: 1024px) {
-    height: 40vh;
-
-    .top-header {
-      .title-header {
-        font-size: 4.5vw;
-      }
-
-      .paragraph-header {
-        font-size: 2vw;
-      }
+    .top-header .title-header {
+      font-size: 4.5vw;
     }
-
-    .bottom-header {
-      .brand {
-        margin-left: 0;
-        font-size: 24px;
-      }
+    .top-header .paragraph-header {
+      font-size: 2vw;
+    }
+    .bottom-header .brand {
+      font-size: 24px;
     }
   }
 
   @media screen and (min-width: 1025px) {
-    height: 40vh;
-
-    .top-header {
-      .title-header {
-        font-size: 3.5vw;
-      }
-
-      .paragraph-header {
-        font-size: 1.5vw;
-      }
+    .top-header .title-header {
+      font-size: 3.5vw;
     }
-
-    .bottom-header {
-      .brand {
-        font-size: 28px;
-      }
+    .top-header .paragraph-header {
+      font-size: 1.2vw;
+    }
+    .bottom-header .brand {
+      font-size: 28px;
     }
   }
 }

@@ -26,8 +26,8 @@
 
 .services {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-direction: column;
   gap: 20px;
   padding: 20px;
   background: linear-gradient(90deg, #333, #777, #333);
@@ -110,7 +110,4 @@
 }
 
 @media screen and (max-width: 320px) {
-  .services {
-    display: block;
-  }
 }
