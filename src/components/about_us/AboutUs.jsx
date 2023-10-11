@@ -15,7 +15,7 @@ const AboutUs = () => {
                 całej Polski. Zapewniamy profesjonalną i kompleksową obsługę
                 księgową w zakresie ryczałtu, kpir oraz pełnych ksiąg.
               </p>
-              <p className="description next">
+              <p className="description">
                 Nasz zespół tworzą specjaliści z bogatym doświadczeniem. Naszą
                 pracę cechuje rzetelność wykonywanych zadań, wieloletnie
                 doświadczenie w pracy z klientami biznesowymi i indywidualnymi,
@@ -23,13 +23,13 @@ const AboutUs = () => {
                 ubezpieczenie firmy od odpowiedzialności cywilnej, zapewniamy
                 poufność oraz bezpieczeństwo przechowywania informacji.
               </p>
-              <p className="description next">
+              <p className="description">
                 Dzięki skorzystaniu z usług naszego biura rachunkowego możecie
                 Państwo w pełni skoncentrować się na rozwijaniu firmy, a sprawy
                 księgowe pozostawić w naszych rękach zyskując gwarancję i
                 pewność prawidłowo prowadzonej księgowości.
               </p>
-              <p className="company-signature next">
+              <p className="company-signature">
                 Zapraszamy do współpracy<br></br> Zespół KMS
               </p>
             </div>
@@ -39,7 +39,6 @@ const AboutUs = () => {
             <div className="image image-secondary"></div>
             <div className="image image-thirth"></div>
           </div>
-          <div className="ornament"></div>
         </div>
       </section>
       

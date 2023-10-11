@@ -1,7 +1,18 @@
+@mixin image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@mixin arrow {
+  position: absolute;
+  content: "▶";
+  font-size: 2.17vh;
+  line-height: 1.8;
+}
 .section-aboutUs {
   animation: slide 1.2s ease-in-out;
   margin-top: 37px;
-  width: 100vw;
+  width: 100%;
   height: auto;
   @keyframes slide {
     0% {
@@ -11,19 +22,14 @@
       transform: translateX(0px);
     }
   }
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: -37px;
-    left: 0;
-    width: 100%;
-    height: 30px;
-    background: linear-gradient(90deg, #666, #ccc, #666);
-  }
+
   .aboutUs-content {
     width: 100%;
     .company-description {
       width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       .company-description-title {
         max-width: 80%;
         color: #212121;
@@ -31,57 +37,50 @@
         font-size: 5vh;
         font-family: "Montserrat", sans-serif;
         padding-left: 42px;
-        margin-bottom: 35px;
+        left: -8vh;
+        margin-bottom: 20px;
         &::before {
-          position: absolute;
+          @include arrow;
           color: #c0c7d2;
-          content: "▶";
-          font-size: 2.17vh;
-          line-height: 1.8;
-          position: absolute;
-          left: 1vw;
+          left: 2.5vh;
         }
         &::after {
-          position: absolute;
+          @include arrow;
           color: #3d5d5b;
-          content: "▶";
-          font-size: 2.17vh;
-          line-height: 1.8;
-          position: absolute;
-          left: 0vw;
+          left: 0vh;
         }
       }
       .company-description-paragraphs {
-        width: 100%;
+        width: 90%;
         color: #212121bf;
         font-family: "Roboto Slab", serif;
-        height: 53vh;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         .description {
+          margin-bottom: 20px;
           text-align: justify;
-          line-height: 3.7vh;
+          line-height: 20px;
+          font-size: 1.5vh;
         }
       }
       .company-signature {
         text-align: end;
         line-height: 4vh;
       }
-      .next {
-        margin-top: 15px;
-      }
     }
     .gallery {
       width: 100%;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
       margin-bottom: 37px;
       .image {
         transition: transform 0.3s ease;
         transform: scale(0.9);
-        width: 25.62vw;
-        height: 45vh;
+        width: 275px;
+        height: 275px;
         filter: brightness(100%);
         &:hover {
           transform: scale(1);
@@ -90,187 +89,145 @@
       }
       .image-first {
         background: url("../../assets/gallery_image.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        margin-top: 13px;
+        margin-top: 25px;
+        @include image;
       }
       .image-secondary {
         background: url("../../assets/gallery_image_secondary.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        margin: 13px;
+        @include image;
       }
       .image-thirth {
         background: url("../../assets/gallery_image_thirth.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        margin-top: 13px;
+        @include image;
       }
     }
   }
 }
 
-@media screen and (max-width: 320px) {
+.section-aboutUs
+  .aboutUs-content
+  .company-description
+  .company-description-title {
+  @media screen and (min-width: 321px) and (max-width: 375px) {
+    left: -9vh;
+  }
+  @media screen and (min-width: 376px) and (max-width: 425px) {
+    left: -13vh;
+  }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    left: -31%;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   .section-aboutUs {
-    &::after {
-      bottom: -703px;
-    }
     .aboutUs-content {
       .company-description {
+        flex-direction: column;
+        align-items: flex-end;
         .company-description-title {
-          width: 80%;
-          left: 4vw;
-          margin-bottom: 20px;
-          &::before {
-            left: 5vw;
-          }
+          left: -70vh;
         }
         .company-description-paragraphs {
-          margin-left: 10px;
-          width: 65%;
+          width: 60%;
+          margin: 30px 70px 0 0;
+          font-size: 2vh;
           .description {
-            font-size: 3vw;
-            line-height: 4vw;
+            font-size: 1.5vh;
           }
-        }
-      }
-      .gallery {
-        display: block;
-        .image-secondary {
-          margin: 0;
-        }
-        .image-thirth {
-          margin: 0;
-        }
-        .image {
-          width: 71%;
-          height: 25vh;
         }
       }
     }
   }
 }
-
-@media screen and (min-width: 321px) and (max-width: 375px) {
+@media screen and (min-width: 1025px) {
   .section-aboutUs {
-    &::after {
-      bottom: -740px;
-    }
     .aboutUs-content {
-      .company-description {
-        margin-bottom: 50px;
-        .company-description-title {
-          left: 3.5vw;
-          margin-bottom: 20px;
-          &::before {
-            left: 5vw;
-          }
-        }
-        .company-description-paragraphs {
-          margin-left: 10px;
-          width: 65%;
-          .description {
-            font-size: 3vw;
-            line-height: 4vw;
-          }
+      .gallery {
+        .image {
+          width: 325px;
+          height: 325px;
         }
       }
-      .gallery {
-        display: block;
-        .image-secondary {
-          margin: 0;
+      .company-description {
+        flex-direction: column;
+        align-items: flex-end;
+        .company-description-title {
+          left: -70vh;
         }
-        .image-thirth {
-          margin: 0;
-        }
-        .image {
-          width: 71%;
-          height: 25vh;
+        .company-description-paragraphs {
+          width: 60%;
+          margin: 30px 100px 0 0;
+          font-size: 2.8vh;
+          .description {
+            font-size: 1.7vh;
+            line-height: 4vh;
+          }
         }
       }
     }
   }
 }
 
-@media screen and (min-width: 376px) and (max-width: 425px) {
+@media screen and (min-width: 550px) {
+  .image-secondary {
+    margin-top: 25px;
+  }
+}
+@media screen and (min-width: 825px) {
+  .image-thirth {
+    margin-top: 25px;
+  }
+}
+@media screen and (min-width: 860px) {
   .section-aboutUs {
-    &::after {
-      bottom: -790px;
-    }
     .aboutUs-content {
       .company-description {
-        margin-bottom: 100px;
         .company-description-title {
-          left: 3vw;
-          margin-bottom: 20px;
-          &::before {
-            left: 5vw;
-          }
-        }
-        .company-description-paragraphs {
-          margin-left: 10px;
-          width: 65%;
-          .description {
-            font-size: 3vw;
-            line-height: 4vw;
-          }
-        }
-      }
-      .gallery {
-        display: block;
-        .image-secondary {
-          margin: 0;
-        }
-        .image-thirth {
-          margin: 0;
-        }
-        .image {
-          width: 71%;
-          height: 25vh;
+          left: -80vh;
         }
       }
     }
   }
 }
-
-
-@media screen and (min-width: 426px) and (max-width: 768px) {
+@media screen and (min-width: 950px) {
   .section-aboutUs {
-    &::after {
-      bottom: -790px;
-    }
     .aboutUs-content {
       .company-description {
-        margin-bottom: 100px;
-        position: sticky;
         .company-description-title {
-          left: 3vw;
-          margin-bottom: 20px;
-          &::before {
-            left: 5vw;
-          }
-        }
-        .company-description-paragraphs {
-          margin-left: 10px;
-          width: 65%;
-          .description {
-            font-size: 3vw;
-            line-height: 4vw;
-          }
+          left: -90vh;
         }
       }
-      .gallery {
-        .image-secondary {
-          margin: 0;
+    }
+  }
+}
+@media screen and (min-width: 1150px) {
+  .section-aboutUs {
+    .aboutUs-content {
+      .company-description {
+        .company-description-title {
+          left: -100vh;
         }
-        .image-thirth {
-          margin: 0;
+        .company-description-paragraphs {
+          width: 50%;
+          margin-right: 100px;
         }
-        .image {
-          height: 25vh;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1250px) {
+  .section-aboutUs {
+    .aboutUs-content {
+      .company-description {
+        .company-description-title {
+          left: -1100px;
+        }
+        .company-description-paragraphs {
+          margin-right: 300px;
+          .description {
+            font-size: 2vh;
+          }
         }
       }
     }
