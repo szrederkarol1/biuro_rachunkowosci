@@ -5,15 +5,6 @@
   padding: 50px 0;
   font-family: "Arial", sans-serif;
   position: relative;
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 30px;
-    background: linear-gradient(90deg, #666, #ccc, #666);
-  }
   .title-offers {
     font-size: 48px;
     margin-bottom: 20px;
@@ -22,8 +13,10 @@
   .incentive {
     font-family: "Roboto Slab", serif;
   }
+}  .custom-cursor {
+  cursor: pointer;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
 }
-
 .services {
   display: flex;
   justify-content: center;
@@ -34,80 +27,114 @@
   border-radius: 15px;
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
   transition: background 0.3s ease;
-}
-
-.service {
-  flex: 1;
-  min-width: calc(33.33% - 20px);
-  background-color: #fff;
-  border-radius: 15px;
-  padding: 20px;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-  &:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.3);
-  }
-
-  .btn-offer {
-    background-color: #555;
-    border-radius: 200px;
-    padding: 10px 20px;
-    color: #fff;
-    font-weight: bold;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-
+  .service {
+    flex: 1;
+    min-width: calc(33.33% - 20px);
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     &:hover {
-      background-color: #444;
+      transform: translateY(-5px);
+      box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.3);
+    }
+    .btn-offer {
+      background-color: #555;
+      border-radius: 200px;
+      padding: 10px 20px;
+      color: #fff;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease, opacity 0.3s ease;
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: #555;
+        transition: left 0.3s ease;
+        z-index: -1;
+      }
+      &:hover::before {
+        left: 0;
+      }
+      &:hover {
+        background-color: #555;
+        opacity: 0.7;
+      }
+    }
+    .destiny {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #333;
+      font-family: "Montserrat", sans-serif;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        width: 100%;
+        height: 4px;
+        background-color: #333;
+        transform: translateX(-50%);
+      }
+    }
+    .list {
+      list-style-type: none;
+      padding: 0;
+      .list-item {
+        margin: 0.5rem 0;
+        color: #555;
+        font-size: 1.2rem;
+        display: flex;
+        align-items: flex-start;
+        &::before {
+          content: "\2714";
+          color: #808080;
+          margin-right: 8px;
+          font-size: 1rem;
+        }
+      }
     }
   }
 }
-
-.destiny {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  color: #333;
-  font-family: "Montserrat", sans-serif;
-  position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    width: 100%;
-    height: 4px;
-    background-color: #333;
-    transform: translateX(-50%);
-  }
-}
-
-.list {
-  list-style-type: none;
-  padding: 0;
-
-  .list-item {
-    margin: 0.5rem 0;
-    color: #555;
-    font-size: 1.2rem;
-    display: flex;
-    align-items: center;
-
-    &::before {
-      content: "\2714";
-      color: #808080;
-      margin-right: 8px;
-      font-size: 1rem;
-    }
-  }
-}
-
 .services:hover {
   background: linear-gradient(90deg, #555, #888, #555);
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 320px) {
+  .services {
+    margin: 10px 100px 0 100px;
+    .service-secondary {
+      margin-top: 10px;
+    }
+  }
+}
+
+@media screen and (min-width: 321px) {
+  .list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .services {
+    flex-direction: row;
+    .service-secondary {
+      margin-top: 0;
+      .btn-offer {
+        margin-top: 228px;
+      }
+    }
+  }
 }

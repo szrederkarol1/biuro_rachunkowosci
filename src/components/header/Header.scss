@@ -12,7 +12,6 @@
       opacity: 1;
     }
   }
-
   &::before {
     background: rgba(0, 0, 0, 0.4);
     content: "";
@@ -20,38 +19,35 @@
     position: absolute;
     width: 100%;
     z-index: 1;
+    @media screen and (min-width: 1440px) {
+      height: 287.95px;
+    }
   }
-
   .top-header,
   .bottom-header {
     color: #fff;
     display: flex;
     align-items: center;
   }
-
   .top-header {
     height: 78%;
     background: url("../../assets/header_background.jpg") center/cover no-repeat;
     flex-direction: column;
     justify-content: center;
-
     .title-header {
       font-family: "Montserrat", sans-serif;
       font-weight: 600;
       margin-bottom: 10px;
       z-index: 2;
     }
-
     .paragraph-header {
       font-family: "Roboto Slab", serif;
       z-index: 2;
     }
   }
-
   .bottom-header {
     height: 22%;
     background-color: #000;
-
     .brand {
       margin-left: 5%;
       cursor: pointer;

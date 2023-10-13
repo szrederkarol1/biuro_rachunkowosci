@@ -30,7 +30,7 @@ const Offers = () => {
           </ul>
           <button className="btn-offer">Zapytaj o ofertę</button>
         </div>
-        <div className="service">
+        <div className="service service-secondary">
           <h2 className="destiny">Księgowość Dla Osób Prywatnych</h2>
           <ul className="list">
             <li className="list-item">Doradztwo podatkowe</li>
