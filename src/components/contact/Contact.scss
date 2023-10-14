@@ -6,19 +6,6 @@
   position: relative;
   margin-top: 50px;
   margin-bottom: 50px;
-  @media (max-width: 768px) {
-    height: 100vh;
-  }
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: -50px;
-    left: 0;
-    width: 100%;
-    height: 55px;
-    background: linear-gradient(90deg, #666, #ccc, #666);
-  }
-
   .contact-container {
     display: flex;
     justify-content: center;
@@ -26,10 +13,6 @@
     width: 70vw;
     height: 41.5vh;
     margin: 0 -24px;
-    @media (max-width: 768px) {
-      display: block;
-      width: 100vw;
-    }
     .form {
       display: flex;
       flex-direction: column;
@@ -38,13 +21,7 @@
       height: 100%;
       padding: 0px 24px;
       margin-top: 10px;
-      @media (max-width: 768px) {
-        display: block;
-        width: 100vw;
-        margin-bottom: 100px;
-      }
     }
-
     .email-container {
       height: 9.5vh;
       margin-bottom: 20px;
@@ -52,7 +29,6 @@
     .message-container {
       position: relative;
     }
-
     .email-input {
       width: 100%;
       height: 5.85vh;
@@ -79,13 +55,11 @@
       margin-top: 10px;
       resize: none;
     }
-
     .email-input:focus,
     #message:focus {
       border-color: rgba(33, 33, 33, 0.8);
       transform: scale(1.02);
     }
-
     .label-text {
       position: absolute;
       top: 12px;
@@ -100,14 +74,12 @@
       font-size: 1rem;
       color: #212121;
     }
-
     .email-input:focus + .label-text,
     #message:focus + .label-text {
       font-size: 12px;
       transform: translateY(-20px) scale(0.8);
       color: #007bff44;
     }
-
     .btn-form {
       height: 6.6vh;
       width: 7.72vw;
@@ -119,27 +91,19 @@
       font-family: "Roboto Slab", serif;
       cursor: pointer;
       transition: background-color 0.25s ease, transform 0.2s ease;
-      @media (max-width: 768px) {
-        width: 14vw;
-      }
     }
-
     .btn-form:hover {
       background-color: #212121;
       color: #fff;
       transition: all 0.25s ease;
       transform: scale(1.05);
     }
-
     .contact-details {
       display: flex;
       flex-direction: column;
       width: 50%;
       height: 33vh;
       padding: 0px 24px;
-      @media (max-width: 768px) {
-        width: 100%;
-      }
       h2 {
         font-size: 40.7px;
         font-family: "Montserrat", sans-serif;
@@ -175,10 +139,6 @@
         letter-spacing: 1px;
         color: rgba(33, 33, 33, 0.75);
         margin-bottom: 5px;
-        @media (max-width: 768px) {
-          margin-top: 20px;
-          font-size: 25px;
-        }
       }
       p {
         font-size: 15.2px;
@@ -194,6 +154,35 @@
         .adress {
           width: 100%;
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-content {
+    height: 100vh;
+    .contact-container {
+      display: block;
+      width: 100vw;
+      .btn-form {
+        width: 20vw;
+        max-width: 85px;
+      }
+      .contact-details {
+        width: 100%;
+        .details {
+          margin-left: 41px;
+        }
+        h6 {
+          margin-top: 20px;
+          font-size: 25px;
+        }
+      }
+      .form {
+        display: block;
+        width: 100vw;
+        margin-bottom: 100px;
       }
     }
   }

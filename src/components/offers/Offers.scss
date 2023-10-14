@@ -13,7 +13,8 @@
   .incentive {
     font-family: "Roboto Slab", serif;
   }
-}  .custom-cursor {
+}
+.custom-cursor {
   cursor: pointer;
   filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
 }
@@ -136,5 +137,12 @@
         margin-top: 228px;
       }
     }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .services {
+    width: 100%;
+    margin: 10px 0;
   }
 }
