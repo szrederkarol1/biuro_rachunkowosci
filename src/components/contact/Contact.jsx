@@ -1,11 +1,31 @@
 import React from "react";
+import { useForm, ValidationError } from "@formspree/react";
 
-const Contact = () => {
+const Contact = ({ Component, pageProps }) => {
+  const [state, handleSubmit] = useForm("myyqzjvd");
+  if (state.succeeded) {
+    return (
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          height: "300px",
+        }}
+      >
+        <p style={{ fontSize: "36px", textAlign:"center" }}>
+          Dziękujemy za wypełnienie formularza!
+          <br></br>
+          Dołożymy wszelkich starań abyś dostał odpowiedź jak najszybciej!
+        </p>
+      </div>
+    );
+  }
   return (
     <>
       <section className="contact-content">
         <div className="contact-container">
-          <div className="form">
+          <form onSubmit={handleSubmit} className="form">
             <div className="email-container">
               <label htmlFor="email" alt="Twój adres e-mail">
                 Twój Adres e-mail
@@ -17,17 +37,31 @@ const Contact = () => {
                 name="email"
                 id="email"
               ></input>
+              <ValidationError
+                prefix="Email"
+                field="email"
+                errors={state.errors}
+              />
             </div>
             <div className="message-container">
               <label htmlFor="message" alt="Wiadomość">
                 Wiadomość
               </label>
               <textarea id="message" name="message"></textarea>
+              <ValidationError
+                prefix="Email"
+                field="email"
+                errors={state.errors}
+              />
             </div>
-            <button type="submit" className="btn-form">
+            <button
+              type="submit"
+              className="btn-form"
+              disabled={state.submitting}
+            >
               Wyślij
             </button>
-          </div>
+          </form>
           <div className="contact-details">
             <h2>Skontaktuj się z nami</h2>
             <div className="details">

@@ -20,6 +20,9 @@
     width: 100%;
     z-index: 1;
     @media screen and (min-width: 1440px) {
+      height: 253.95px;
+    }
+    @media screen and (min-width: 1660px) {
       height: 287.95px;
     }
   }
