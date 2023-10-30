@@ -3,6 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <>
+      <div className="ornament"></div>
       <section className="footer-container">
         <div className="footer-content">
           <div className="license">
