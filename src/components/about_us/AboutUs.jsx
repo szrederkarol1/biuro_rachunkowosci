@@ -8,7 +8,7 @@ const AboutUs = () => {
           <div className="company-description">
             <div className="company-description-title">O nas</div>
             <div className="company-description-paragraphs">
-              <p className="description">
+              <p  className="description">
                 Biuro rachunkowe KMS zlokalizowane jest w Gowinie k. Wejherowa.
                 Świadczymy tradycyjne usługi księgowe na terenie Wejherowa i
                 okolic oraz usługi internetowego biura rachunkowego na terenie
@@ -41,7 +41,6 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
-      
     </>
   );
 };

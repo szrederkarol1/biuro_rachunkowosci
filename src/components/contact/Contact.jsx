@@ -13,7 +13,7 @@ const Contact = ({ Component, pageProps }) => {
           height: "300px",
         }}
       >
-        <p style={{ fontSize: "36px", textAlign:"center" }}>
+        <p style={{ fontSize: "36px", textAlign: "center" }}>
           Dziękujemy za wypełnienie formularza!
           <br></br>
           Dołożymy wszelkich starań abyś dostał odpowiedź jak najszybciej!
@@ -70,7 +70,7 @@ const Contact = ({ Component, pageProps }) => {
                 <p>84-215 Gowino ul. Cicha 13/1</p>
               </div>
               <div className="email">
-                <h6>Adres e-mail</h6>
+                <h6 style={{ width: "170px" }}>Adres e-mail</h6>
                 <p>biuro@rachunkowosckms.pl</p>
               </div>
               <div className="number">
