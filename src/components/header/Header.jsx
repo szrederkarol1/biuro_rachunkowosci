@@ -7,7 +7,7 @@ const Header = () => {
         <div className="top-header">
           <h1 className="title-header">Profesjonalne usługi księgowe</h1>
           <p className="paragraph-header">
-            dostosowane do potrzeb twojej firmy
+            dostosowane do potrzeb Twojej firmy
           </p>
         </div>
         <div className="bottom-header">

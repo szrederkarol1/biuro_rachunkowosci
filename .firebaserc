@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "biuro-rachunkowsci"
-  }
+    "default": "biurokms-9ce7b",
+    "public": "biurokms-9ce7b"
+  },
+  "targets": {},
+  "etags": {}
 }
