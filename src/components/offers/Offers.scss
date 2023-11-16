@@ -109,7 +109,10 @@
 .services:hover {
   background: linear-gradient(90deg, #555, #888, #555);
 }
-
+.ornament {
+  height: 50px;
+  background-color: #ccc;
+}
 @media screen and (min-width: 320px) {
   .services {
     margin: 10px 100px 10px 100px;
@@ -145,7 +148,4 @@
     margin: 10px 0;
   }
 }
-.ornament {
-  height: 50px;
-  background-color: #ccc; /* Odcień szarości */
-}
+
