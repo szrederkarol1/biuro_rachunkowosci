@@ -1,7 +1,7 @@
 {
   "hosting": {
-    "site": "biurokms-9ce7b",
-    "public": "build",
+    "site": "biurokms-11eeb",
+    "public": "public",
     "ignore": [
       "firebase.json",
       "**/.*",
