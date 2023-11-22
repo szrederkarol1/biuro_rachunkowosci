@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "biurokms-11eeb",
+    "site": "biurokms-46b04",
     "public": "public",
     "ignore": [
       "firebase.json",
@@ -9,12 +9,7 @@
     ],
     "rewrites": [
       {
-        "source": "**/*","headers": [
-          {
-            "key": "Cache-Control",
-            "value": "no-cache, no-store, must-revalidate"
-          }
-        ],
+        "source": "**",
         "destination": "/index.html"
       }
     ]
