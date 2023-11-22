@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "site": "biurokms-a0c05",
+    "public": "biurokms-a0c05",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
