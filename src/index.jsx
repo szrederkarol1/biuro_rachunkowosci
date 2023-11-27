@@ -4,7 +4,7 @@ import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 // Przykładowe miejsce użycia Firebase, np. w pliku main.js
-import "./firebase"; // importuje wcześniej stworzony plik z konfiguracją
+import "../.firebase"; // importuje wcześniej stworzony plik z konfiguracją
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
