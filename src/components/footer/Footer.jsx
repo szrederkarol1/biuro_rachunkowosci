@@ -7,8 +7,8 @@ const Footer = () => {
       <section className="footer-container">
         <div className="footer-content">
           <div className="license">
-            <p> © All rights reserved</p>
-            <p>Polityka Cookie</p>
+            <p> © 2023 - Biuro Rachunkowe KMS</p>
+            <p>Realizacja Karol Szreder</p>
           </div>
         </div>
       </section>
