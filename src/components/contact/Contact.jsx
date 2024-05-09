@@ -67,15 +67,39 @@ const Contact = ({ Component, pageProps }) => {
             <div className="details">
               <div className="adress">
                 <h6>Adres</h6>
-                <p>84-215 Gowino ul. Cicha 13/1</p>
+                <a
+                  style={{
+                    textDecoration: "none",
+                    color: "rgba(33, 33, 33, 0.75)",
+                  }}
+                  href="https://www.google.com/maps?q=84-215 Gowino ul. Cicha 13/1"
+                >
+                  84-215 Gowino ul. Cicha 13/1
+                </a>
               </div>
               <div className="email">
                 <h6 style={{ width: "170px" }}>Adres e-mail</h6>
-                <p>biuro@rachunkowosckms.pl</p>
+                <a
+                  style={{
+                    textDecoration: "none",
+                    color: "rgba(33, 33, 33, 0.75)",
+                  }}
+                  href="mailto:biuro@rachunkowosckms.pl"
+                >
+                  biuro@rachunkowosckms.pl
+                </a>
               </div>
               <div className="number">
                 <h6>Nr telefonu</h6>
-                <p>+48 669 753 700</p>
+                <a
+                  style={{
+                    textDecoration: "none",
+                    color: "rgba(33, 33, 33, 0.75)",
+                  }}
+                  href="tel:+48669753700"
+                >
+                  +48669753700
+                </a>
               </div>
             </div>
           </div>
