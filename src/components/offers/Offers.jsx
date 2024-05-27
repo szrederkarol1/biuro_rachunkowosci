@@ -4,7 +4,7 @@ const Offers = () => {
   return (
     <>
       <header className="heading-content">
-        <h1 className="title-offers">Usługi Księgowe KMS</h1>
+        <h2 className="title-offers">Usługi Księgowe KMS</h2>
         <p className="incentive">
           Z nami Twoje finanse będą bezpieczne i opłacalne. Skorzystaj z naszych
           usług księgowych już dziś!

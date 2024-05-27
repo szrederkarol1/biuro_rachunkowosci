@@ -72,7 +72,7 @@ const Contact = ({ Component, pageProps }) => {
                     textDecoration: "none",
                     color: "rgba(33, 33, 33, 0.75)",
                   }}
-                  href="https://www.google.com/maps?q=84-215 84-200 Wejherowo ul. Sobieskiego 229/4"
+                  href="https://www.google.com/maps/place/Biuro+rachunkowe+KMS/@54.6024326,18.2355728,17z/data=!3m1!4b1!4m6!3m5!1s0x46fdb9837daac9b9:0x88db2d2f9e29cf9e!8m2!3d54.6024326!4d18.2355728!16s%2Fg%2F11jz9_lflg?hl=pl&entry=ttu 84-200 Wejherowo ul. Sobieskiego 229/4"
                 >
                   84-200 Wejherowo ul. Sobieskiego 229/4
                 </a>
