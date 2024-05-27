@@ -17,6 +17,12 @@
         ],
         "destination": "/index.html"
       }
-    ]
+    ], "redirects": [],
+    "headers": [],
+    "cleanUrls": true,
+    "trailingSlash": false,
+    "errorPages": {
+      "404": "/404.html"
+    }
   }
 }

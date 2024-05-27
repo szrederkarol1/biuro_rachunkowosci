@@ -72,9 +72,9 @@ const Contact = ({ Component, pageProps }) => {
                     textDecoration: "none",
                     color: "rgba(33, 33, 33, 0.75)",
                   }}
-                  href="https://www.google.com/maps?q=84-215 Gowino ul. Cicha 13/1"
+                  href="https://www.google.com/maps?q=84-215 84-200 Wejherowo ul. Sobieskiego 229/4"
                 >
-                  84-215 Gowino ul. Cicha 13/1
+                  84-200 Wejherowo ul. Sobieskiego 229/4
                 </a>
               </div>
               <div className="email">
@@ -96,9 +96,9 @@ const Contact = ({ Component, pageProps }) => {
                     textDecoration: "none",
                     color: "rgba(33, 33, 33, 0.75)",
                   }}
-                  href="tel:+48669753700"
+                  href="tel:+48518499024"
                 >
-                  +48669753700
+                  +48518499024
                 </a>
               </div>
             </div>

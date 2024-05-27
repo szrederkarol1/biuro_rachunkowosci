@@ -13,12 +13,11 @@ const AboutUs = () => {
               </div>
               <div className="pclass">
                 <p className="description">
-                  Biuro rachunkowe KMS zlokalizowane jest w Gowinie k.
-                  Wejherowa. Świadczymy tradycyjne usługi księgowe na terenie
-                  Wejherowa i okolic oraz usługi internetowego biura
-                  rachunkowego na terenie całej Polski. Zapewniamy profesjonalną
-                  i kompleksową obsługę księgową w zakresie ryczałtu, kpir oraz
-                  pełnych ksiąg.
+                  Biuro rachunkowe KMS zlokalizowane jest w Wejherowie.
+                  Świadczymy tradycyjne usługi księgowe na terenie Wejherowa i
+                  okolic oraz usługi internetowego biura rachunkowego na terenie
+                  całej Polski. Zapewniamy profesjonalną i kompleksową obsługę
+                  księgową w zakresie ryczałtu, kpir oraz pełnych ksiąg.
                 </p>
                 <p className="description">
                   Nasz zespół tworzą specjaliści z bogatym doświadczeniem. Naszą
